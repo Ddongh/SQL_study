@@ -4,21 +4,25 @@
 <br>&nbsp;&nbsp;&nbsp;&nbsp; 2.1  SUBSTR
 <br>&nbsp;&nbsp;&nbsp;&nbsp; 2.2 REPLACE
  3. 숫자
-		 3.1 ROUND
-		 3.2 AVG
-		 3.3 SUM
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 3.1 ROUND
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 3.2 AVG
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 3.3 SUM
  4. 날짜
-		 4.1 DATE_FORMAT
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 4.1 DATE_FORMAT
  5. 조건
-		 5.1 IS NOT
-		 5.2 ORDER BY
-		 5.3 IFNULL
-		 5.4 WHERE
-		 5.5 GROUP BY
-		 5.6 HAVING
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 5.1 IS NOT
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 5.2 ORDER BY
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 5.3 IFNULL
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 5.4 WHERE
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 5.5 GROUP BY
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 5.6 HAVING
  6. JOIN
-		 6.1 INNER JOIN
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 6.1 INNER JOIN
 
+
+<br>
+<br>
+<br>
 기본적인 흐름|&nbsp;
 :---|:---
 SELECT *| 
