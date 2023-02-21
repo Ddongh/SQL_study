@@ -1,5 +1,12 @@
 # SQL_stydy
 
+헤더1|헤더2|헤더3
+:---|:---:|---:
+Left|Center|Right
+1|2|3
+4|5|6
+7|8|9
+
 ##### SELECT * <br>
 ##### FROM [TABLE1] AS A <br>
 ##### &nbsp&nbsp&nbsp&nbsp JOIN [TABLE2] AS B <br>
