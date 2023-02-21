@@ -1,8 +1,8 @@
 # SQL_study
  1. 기본적인 흐름
  2. 문자열
-		 2.1  SUBSTR
-		 2.2 REPLACE
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 2.1  SUBSTR
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 2.2 REPLACE
  3. 숫자
 		 3.1 ROUND
 		 3.2 AVG
