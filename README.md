@@ -19,11 +19,6 @@
  6. JOIN
 <br>&nbsp;&nbsp;&nbsp;&nbsp; 6.1 INNER JOIN
 
-
-<br>
-<br>
-<br>
-
 기본적인 흐름|&nbsp;
 :---|:---
 SELECT *| 
@@ -74,3 +69,10 @@ JOIN|&nbsp;|&nbsp;
 :---|:---|:---:
 문법|설명|비고 
 FROM [TABLE1]  <br> &nbsp;&nbsp;&nbsp;&nbsp; (INNER)JOIN [TABLE2] <br> &nbsp;&nbsp;&nbsp;&nbsp; ON [TABLE1].column1 = [TABLE2] | INNER JOIN | 
+<br>
+
+UNION|&nbsp;|&nbsp;
+:---|:---|:---:
+문법|설명|비고 
+SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE1]  <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **UNION** <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE2]     | 테이블 합치기(중복제거) | column개수와 데이터타입 일치 <br> 두번째 쿼리부터는 별칭 생략 가능 <br> ORDER BY는 쿼리 마지막에 사용가능(컬럼순번과 별칭만 사용가능)
+SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE1]  <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **UNION ALL** <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE2]     | 테이블 합치기(중복허용) | 
