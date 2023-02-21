@@ -20,3 +20,5 @@
 ● FROM [TABLE1] AS A           : TABLE1과 TABLE2를 INNER JOIN
     INNER JOIN [TABLE2] AS B     primary key -> A.column = B.column
     ON A.column = B.column
+    
+● SUBSTR(column, location, n) : 문자열 column을 location(위치, 첫번째는 1)부터 n개 잘라냄
