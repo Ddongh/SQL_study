@@ -63,6 +63,7 @@ IFNULL(column, A) | if( column == null): <br> &nbsp;&nbsp;&nbsp;&nbsp; return co
 WHERE | select할 column에 조건을 준다.
 GROUP BY | column을 기준으로 group by 하여 group by 기준으로 AVG, SUM 등등 적용
 HAVIGN | GROUP BY를 적용한 후 조건 | 이때 WHERE를 쓰면 에러
+LIMIT n | 갯수 제한(n개만 출력됨) | 
 <br>
 
 JOIN|&nbsp;|&nbsp;
