@@ -1,4 +1,13 @@
 # SQL_stydy
+
+##### SELECT * <br>
+##### FROM [TABLE1] AS A <br>
+##### &nbsp&nbsp&nbsp&nbsp JOIN [TABLE2] AS B <br>
+##### &nbsp&nbsp&nbsp&nbsp ON A.column1 = B.column2 <br>
+##### WHERE 조건 <br>
+##### GROUP BY A.column1 <br>
+##### HAVING 조건 <br>
+
 ### 공통
 
 ● IFNULL(column, A) : column의 값이 NULL 이 아니면 기존의 data, NULL이면 A로 변경 
@@ -43,3 +52,8 @@
 
 ● GROUP BY column : column을 기준으로 group by
                     이후 group by 기준으로 AVG, SUM 등등 
+                    
+● HAVING : GROUP BY A.column1
+ HAVING 조건
+                    
+
