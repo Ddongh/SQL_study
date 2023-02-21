@@ -1,23 +1,23 @@
 # SQL_study
  1. 기본적인 흐름
  2. 문자열
-		 -- SUBSTR
-		 -- REPLACE
+		 2.1  SUBSTR
+		 2.2 REPLACE
  3. 숫자
-		 -- ROUND
-		 -- AVG
-		 -- SUM
+		 3.1 ROUND
+		 3.2 AVG
+		 3.3 SUM
  4. 날짜
-		 -- DATE_FORMAT
+		 4.1 DATE_FORMAT
  5. 조건
-		 -- IS NOT
-		 -- ORDER BY
-		 -- IFNULL
-		 -- WHERE
-		 -- GROUP BY
-		 -- HAVING
+		 5.1 IS NOT
+		 5.2 ORDER BY
+		 5.3 IFNULL
+		 5.4 WHERE
+		 5.5 GROUP BY
+		 5.6 HAVING
  6. JOIN
-		 -- INNER JOIN
+		 6.1 INNER JOIN
 
 기본적인 흐름|&nbsp;
 :---|:---
