@@ -1,5 +1,12 @@
 # SQL_study
 
+#####기본적인 흐름|&nbsp;
+:---|:---
+Left|Center
+1|2
+4|5
+7|8
+
 ##### SELECT * <br>
 ##### FROM [TABLE1] AS A <br>
 ##### &nbsp;&nbsp;&nbsp;&nbsp; JOIN [TABLE2] AS B <br>
@@ -9,7 +16,7 @@
 ##### HAVING 조건 <br>
 
 문자열|&nbsp;|&nbsp;
-:---|:---:|---:
+:---|:---|:---:
 Left|Center|Right
 1|2|3
 4|5|6
