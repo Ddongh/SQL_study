@@ -1,14 +1,14 @@
-# SQL_stydy
+# SQL_study
 
 ##### SELECT * <br>
 ##### FROM [TABLE1] AS A <br>
 ##### &nbsp;&nbsp;&nbsp;&nbsp; JOIN [TABLE2] AS B <br>
-##### &nbsp&nbsp&nbsp&nbsp ON A.column1 = B.column2 <br>
+##### &nbsp;&nbsp;&nbsp;&nbsp; ON A.column1 = B.column2 <br>
 ##### WHERE 조건 <br>
 ##### GROUP BY A.column1 <br>
 ##### HAVING 조건 <br>
 
-문법|설명|비고
+|문자|
 :---|:---:|---:
 Left|Center|Right
 1|2|3
