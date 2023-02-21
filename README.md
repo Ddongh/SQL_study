@@ -38,6 +38,7 @@ HAVING 조건|
 문법|설명|비고 
 SUBSTR(column, location, n)|문자열 column을 location(위치, 첫번째는 1)부터 n개 잘라냄|
 REPLACE(column, "A", "B")|문자열 column의 "A"를 "B"로 |
+COUNT(column) | column의 개수 세기 | 
 <br>
 
 숫자|&nbsp;|&nbsp;
