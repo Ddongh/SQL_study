@@ -22,3 +22,6 @@
     ON A.column = B.column
     
 ● SUBSTR(column, location, n) : 문자열 column을 location(위치, 첫번째는 1)부터 n개 잘라냄
+
+● GROUP BY column : column을 기준으로 group by
+                    이후 group by 기준으로 AVG, SUM 등등 
