@@ -1,3 +1,4 @@
+
 # SQL_study
  1. 기본적인 흐름
  2. 문자열
@@ -47,12 +48,19 @@ COUNT(column) | column의 개수 세기 |
 ROUND(column, 반올림자리) | 기본자리값 0(소수 첫째자리) <br> 음수면 소수, 양수면 정수 방향으로 자리 이동
 AVG(column) | 평균 |
 SUM(comumn) | 합계 |
+column BETWEEN n1 AND n2 | n1 이상 n2 이하| 
+column IN (값1, 값2, ...); | 괄호 내의 값 중 일치하는 것이 있으면 TRUE | 
 <br>
 
 날짜|&nbsp;|&nbsp;
 :---|:---|:---:
 문법|설명|비고 
 DATE_FORMAT(column, format) | 날짜 형식(으로) 변환 | "%Y-%m-%d"
+YEAR(column) | 연 | 2023
+MONTH(column) | 월 | 8
+DAY(column) | 일 | 23
+
+
 <br>
 
 조건|&nbsp;|&nbsp;
@@ -65,16 +73,25 @@ WHERE | select할 column에 조건을 준다.
 GROUP BY | column을 기준으로 group by 하여 group by 기준으로 AVG, SUM 등등 적용
 HAVIGN | GROUP BY를 적용한 후 조건 | 이때 WHERE를 쓰면 에러
 LIMIT n | 갯수 제한(n개만 출력됨) | 
+SELECT DISTINCT column <br> FROM table| 중복제거 
 <br>
 
 JOIN|&nbsp;|&nbsp;
 :---|:---|:---:
 문법|설명|비고 
-FROM [TABLE1]  <br> &nbsp;&nbsp;&nbsp;&nbsp; (INNER)JOIN [TABLE2] <br> &nbsp;&nbsp;&nbsp;&nbsp; ON [TABLE1].column1 = [TABLE2] | INNER JOIN | 
+FROM [TABLE1]  <br> &nbsp;&nbsp;&nbsp;&nbsp; (INNER)JOIN [TABLE2] <br> &nbsp;&nbsp;&nbsp;&nbsp; ON [TABLE1].column1 = [TABLE2].column2 | INNER JOIN | 
 <br>
 
 UNION|&nbsp;|&nbsp;
 :---|:---|:---:
 문법|설명|비고 
 SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE1]  <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **UNION** <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE2]     | 테이블 합치기(중복제거) | column개수와 데이터타입 일치 <br> 두번째 쿼리부터는 별칭 생략 가능 <br> ORDER BY는 쿼리 마지막에 사용가능(컬럼순번과 별칭만 사용가능)
-SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE1]  <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **UNION ALL** <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE2]     | 테이블 합치기(중복허용) | 
+SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE1]  <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **UNION ALL** <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT colume1, column2 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM [TABLE2]     | 테이블 합치기(중복허용) |
+<br>
+
+WITH|&nbsp;|&nbsp;
+:---|:---|:---:
+문법|설명|비고  
+WITH 임시테이블명 AS ( <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUB QUERY문 (SELECT절) <br>)|sub query를 임시 테이블로 지정하여 사용|
+
+
