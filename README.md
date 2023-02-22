@@ -1,4 +1,5 @@
 
+
 # SQL_study
  1. 기본적인 흐름
  2. 문자열
@@ -73,7 +74,10 @@ WHERE | select할 column에 조건을 준다.
 GROUP BY | column을 기준으로 group by 하여 group by 기준으로 AVG, SUM 등등 적용
 HAVIGN | GROUP BY를 적용한 후 조건 | 이때 WHERE를 쓰면 에러
 LIMIT n | 갯수 제한(n개만 출력됨) | 
-SELECT DISTINCT column <br> FROM table| 중복제거 
+SELECT DISTINCT column <br> FROM table| 중복제거
+CASE  <br> &nbsp;&nbsp;&nbsp;&nbsp; WHEN [조건] <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; THEN [A] <br> &nbsp;&nbsp;&nbsp;&nbsp; ELSE <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [B] <br> END | 조건이 TRUE면 [A], FALSE면 [B]
+
+
 <br>
 
 JOIN|&nbsp;|&nbsp;
